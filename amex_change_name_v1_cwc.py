@@ -1,7 +1,7 @@
 import os 
 import datetime
 
-os.chdir(r'C:\Users\amitoj\Downloads\CreditCardStatements\Amex')
+os.chdir(r'C:\Users\amitoj\Downloads\File_Name_Change\Amex')
 
 for f in os.listdir():
     f_name, f_ext = os.path.splitext(f)

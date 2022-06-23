@@ -1,15 +1,15 @@
 import os 
 from datetime import datetime as dt
 
-os.chdir(r'C:\Users\amitoj\Downloads\CreditCardStatements\Discover')
+os.chdir(r'C:\Users\amitoj\Downloads\File_Name_Change\Citi')
 
 for f in os.listdir():
 
     f_txt_name, f_ext = os.path.splitext(f)
 
-    f_date_convert, f_month = f_txt_name.split(' ')
+    f_bank_name, f_date_convert, f_month = f_txt_name.split('_')
 
-    f_date = dt.strptime(f_date_convert, '%Y-%m-%d')
+    f_date = dt.strptime(f_date_convert, '%m-%d-%y')
 
     # print(f_date.date())
 
@@ -25,7 +25,7 @@ for f in os.listdir():
     # f_month_name = datetime_object.strftime("%B")
 
     # 'format'.format(("Amex") + filename + {Month} + {ext})
-    new_name = '{}_{}_{}{}'.format(('Discover'), f_date.date(), f_month , f_ext)
+    new_name = '{}_{}_{}{}'.format(('Citi'), f_date.date(), f_month , f_ext)
     # print(new_name)
 
     os.rename(f, new_name)

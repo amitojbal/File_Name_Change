@@ -2,7 +2,7 @@ import os
 from datetime import datetime as dt
 import dateutil.parser
 
-os.chdir(r'C:\Users\amitoj\Downloads\CreditCardStatements\Chase')
+os.chdir(r'C:\Users\amitoj\Downloads\File_Name_Change\Chase')
 
 for f in os.listdir():
 

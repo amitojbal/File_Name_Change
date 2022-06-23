@@ -1,13 +1,13 @@
 import os 
 from datetime import datetime as dt
 
-os.chdir(r'C:\Users\amitoj\Downloads\CreditCardStatements\Discover')
+os.chdir(r'C:\Users\amitoj\Downloads\File_Name_Change\Discover')
 
 for f in os.listdir():
 
     f_txt_name, f_ext = os.path.splitext(f)
 
-    f_bank_name, f_acct, f_date_convert = f_txt_name.split('-')
+    f_bank_name, f_stmt, f_date_convert, f_acct = f_txt_name.split('-')
 
     f_date = dt.strptime(f_date_convert, '%Y%m%d')
 
