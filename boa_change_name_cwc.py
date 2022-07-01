@@ -1,7 +1,7 @@
 import os 
 import datetime
 
-os.chdir(r'C:\Users\amitoj\Downloads\CreditCardStatements\BoA')
+os.chdir(r'C:\Users\amitoj\Downloads\File_Name_Change\BoA')
 
 for f in os.listdir():
 
