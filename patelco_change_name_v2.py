@@ -8,7 +8,7 @@ for f in os.listdir():
     f_txt_name, f_ext = os.path.splitext(f)
 
     # 'format'.format(("Amex") + filename + {Month} + {ext})
-    new_name = '{}_{}_{}{}'.format(("Patelco"), ("2022-05-25"), ("May") , f_ext)
+    new_name = '{}_{}_{}{}'.format(("Patelco"), ("2022-07-25"), ("July") , f_ext)
     # print(new_name)
 
     os.rename(f, new_name)
